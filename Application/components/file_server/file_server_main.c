@@ -27,7 +27,7 @@
 
 static const char *TAG = "example";
 
-void app_main(void)
+void file_server_main1(void)
 {
     ESP_LOGI(TAG, "Starting example");
     ESP_ERROR_CHECK(nvs_flash_init());
@@ -43,7 +43,11 @@ void app_main(void)
      * examples/protocols/README.md for more information about this function.
      */
     ESP_ERROR_CHECK(example_connect());
+}
 
+
+void file_server_main2(void)
+{
     /* Start the file server */
     ESP_ERROR_CHECK(example_start_file_server(base_path));
     ESP_LOGI(TAG, "File server started");
