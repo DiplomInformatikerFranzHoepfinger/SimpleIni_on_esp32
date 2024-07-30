@@ -4,8 +4,24 @@
 
 void app_main(void)
 {
-    while (true) {
-        printf("Hello from app_main!\n");
-        sleep(1);
-    }
+
+
+
+
+
+
+
+
+
+    file_server_main1();
+
+
+
+
+
+
+
+
+
+    file_server_main2();
 }
