@@ -27,6 +27,10 @@
 
 static const char *TAG = "example";
 
+
+
+    const char* base_path = "/data";
+
 void file_server_main1(void)
 {
     ESP_LOGI(TAG, "Starting example");
@@ -35,7 +39,6 @@ void file_server_main1(void)
     ESP_ERROR_CHECK(esp_event_loop_create_default());
 
     /* Initialize file storage */
-    const char* base_path = "/data";
     ESP_ERROR_CHECK(example_mount_storage(base_path));
 
     /* This helper function configures Wi-Fi or Ethernet, as selected in menuconfig.
