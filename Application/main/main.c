@@ -36,6 +36,7 @@ void app_main(void)
 
 	initSettings("/data/settings.ini");
 	setX64("test-Sec", "test-key", 0xFFFFFFFFFFFFFFFFU);
+	setX64("test-Sec", "test-key3", 0xFEFEFEFEFEFEFEFEU);
 	saveSettings();
 
 
