@@ -1,6 +1,4 @@
 idf_component_register(SRCS 
-			"settingsIni.cpp"
                     INCLUDE_DIRS 
 		    "."
-		    ".." 
-                    REQUIRES nvs_flash)
+                    PRIV_REQUIRES  )
