@@ -3,4 +3,4 @@ idf_component_register(SRCS
                     INCLUDE_DIRS 
 		    "."
 		    ".." 
-                    REQUIRES nvs_flash)
+                    PRIV_REQUIRES nvs_flash SimpleIni )
